@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7fc537b50d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="col-12 col-s-12 nav">
+      <ul class="navbar">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+      <img src="images/gagan_logo.jpg" alt="brand" id="brand-logo" />
+    </div>
+    <!-- Image and entry table -->
+
+    <div class="row">
+      <div class="col-12 col-s-12" id="poster-div">
+        <div class="main-text">
+          <h1 id="main-head">BmiCal</h1>
+          <p>Fitness for Everyone.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <!-- <div class="col-12 col-s-12 intro-name">
+        <h1 id="main-head">BmiCal</h1>
+      </div> -->
+      <!-- ENTRY TABLE -->
+      <div class="col-12 col-s-12 entry-table">
+        <table>
+          <tr>
+            <td>
+              <label class="pickGender" for="Gender">Gender: &nbsp;</label>
+            </td>
+            <td>
+              <select name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="height" for="Height">Height (cms): &nbsp;</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                value="150"
+                min="1"
+                max="300"
+                autofocus
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="weight" for="Weight">Weight (kgs): &nbsp;</label>
+            </td>
+            <td>
+              <input type="number" value="60" min="1" max="500" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label class="age" for="Age">Age: &nbsp;</label>
+            </td>
+            <td>
+              <input type="number" value="20" min="1" max="100" required />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-12 col-s-12" id="submit-div">
+        <p>
+          <button id="submit-btn">Submit</button>
+        </p>
+      </div>
+    </div>
+    <!-- OUTPUT MESSAGE -->
+    <div class="col-12 col-s-12 output-div">
+      <p id="message"></p>
+    </div>
+    <!-- LINKS -->
+    <div class="col-12 col-s-12 link-div">
+      <a href="linkbmi.html">BMI</a>
+      <a href="linkbf.html">Body Fat</a>
+      <a href="linkiW.html">Ideal Weight</a>
+      <a href="linkbmr.html">BMR</a>
+    </div>
+
+    <div class="col-12 col-s-12 footer-div">
+      <a class="footer-link" href="https://www.facebook.com"
+        ><i class="fab fa-facebook fa-2x"></i
+      ></a>
+      <a class="footer-link" href="https://www.twitter.com"
+        ><i class="fab fa-twitter fa-2x"></i
+      ></a>
+      <a class="footer-link" href="https://www.instagram.com"
+        ><i class="fab fa-instagram fa-2x"></i
+      ></a>
+      <p class="footer-text">© Copyright 2021 - GCOD3</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <label class="pickUnit" for="Measurements">
+          Pick Measuring Units:&nbsp;</label
+        >
+        <select name="Measurements">
+          <option value="Metric">Metric</option>
+          <option value="Imperial">Imperial</option>
+        </select>
+        <br />
+        <br /> -->

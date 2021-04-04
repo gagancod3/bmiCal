@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+[class*='col-'] {
+  width: 100%;
+}
+[class*='col-'] {
+  float: left;
+  padding: 15px;
+}
+html {
+  font-family: sans-serif;
+}
+body {
+  background: f6f5f5;
+  color: #333;
+}
+.row {
+  text-align: center;
+}
+#brand-logo {
+  float: right;
+  width: 5%;
+  height: 5%;
+}
+.intro-name {
+  background-color: gray;
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+.intro-name h1 {
+  font-size: 5vw;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1;
+}
+.navbar {
+  text-align: left;
+  left: 0%;
+  top: 0%;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  margin-bottom: 1em;
+  padding: 0.5% 1%;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(197, 193, 193);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.navbar a:hover {
+  color: white;
+}
+
+#poster-div {
+  padding: 0;
+  margin: 0;
+  background: url('images/intro-img1.jpg') no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+}
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: white;
+}
+.main-text p {
+  letter-spacing: 0.3vw;
+  text-align: center;
+  color: orange;
+}
+#main-head {
+  letter-spacing: 0.3vw;
+  font-size: 10vw;
+  text-decoration: underline overline;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+div .entry-table {
+  background-color: gray;
+  color: white;
+  padding: 5%;
+}
+.entry-table table {
+  background-color: #222;
+  padding: 5%;
+  width: 100%;
+  box-shadow: 3px 3px 5px 4px #555;
+}
+.entry-table tr {
+  font-size: 4vw;
+}
+.entry-table td {
+  padding-bottom: 1%;
+}
+select,
+input {
+  font-size: 3vw;
+}
+#submit-div {
+  background-color: gray;
+}
+#submit-btn {
+  background-color: white;
+  color: #222;
+  font-size: 2.5vw;
+  padding: 1.5vw;
+  border-radius: 2vw;
+  box-shadow: 3px 3px 5px 4px #555;
+}
+#submit-btn:hover {
+  background-color: #222;
+  color: white;
+}
+.output-div {
+  text-align: center;
+  background-color: yellowgreen;
+}
+.output-div p {
+  height: 2vw;
+  margin: auto;
+}
+.link-div {
+  text-align: center;
+  background-color: #222;
+}
+.link-div a {
+  text-decoration: none;
+  padding: 2%;
+  color: #999;
+  font-size: 3vw;
+}
+.link-div a:hover {
+  color: white;
+}
+.footer-div {
+  text-align: center;
+  background-color: gray;
+}
+.footer-div a {
+  color: rgb(201, 200, 200);
+  padding: 1vw 1vw;
+}
+.footer-div a:hover {
+  color: white;
+}
+.footer-div p {
+  font-size: 1rem;
+  padding: 1rem;
+  color: rgb(201, 200, 200);
+}
+/*BMI page*/
+.content {
+  padding: 3% 4%;
+  width: 60%;
+  margin: auto;
+}
+#bmi-chart {
+  width: 100%;
+  height: auto;
+}
+.bmi-table {
+  text-align: center;
+  border: 2px solid black;
+  margin-bottom: 2%;
+  background: #333;
+  color: white;
+}
+.bmi-table td {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+/* Ideal weight*/
+.list-bodyFrame {
+  list-style-type: disc;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For Desktop */
+
+  .navbar ul {
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .navbar li {
+    display: inline;
+    float: left;
+  }
+  .navbar li a {
+    display: block;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablet */
+
+  .navbar li {
+    display: inline;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/* @media only screen and (orientation: landscape){
+} */
